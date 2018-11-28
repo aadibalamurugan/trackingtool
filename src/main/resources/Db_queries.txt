@@ -1,0 +1,21 @@
+// Create database
+CREATE DATABASE TrackingApplicationDB;
+
+// Create table
+CREATE TABLE  TrackingApplicationDB.Tracking_Details(
+    Tracking_Id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    Tracking_Name VARCHAR(100) NOT NULL,
+    Tracking_Number BIGINT(51) NOT NULL
+);
+
+// Insert records
+INSERT INTO `TrackingApplicationDB`.`Tracking_Details` 
+            (`Tracking_Id`, `Tracking_Name`, `Tracking_Number`) 
+VALUES      (NULL, 'Bala', '8888889098'), 
+            (NULL, 'Amal', '12345678900'); 
+
+// View records
+SELECT * FROM TrackingApplicationDB.Tracking_Details;
+
+//sample Json
+http://localhost:8080/TrackingApps/getTrackingDetails/2
