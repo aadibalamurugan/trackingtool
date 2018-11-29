@@ -27,7 +27,7 @@ public class TrackingDetailsServImpl implements TrackingDetailsServ{
 		TrackingDetailsResponse response = new TrackingDetailsResponse();
 		TrackingDetailsEntity trackentity= cdao.getTrackingDetails(id);
 		logger.info("Data Presistance" + trackentity.toString());
-		if(trackentity != null) {
+		if(trackentity.getTid() != null) {
 			response.setTid(trackentity.getTid());
 			response.setTname(trackentity.getTname());
 			response.setTnumber(trackentity.getTnumber());

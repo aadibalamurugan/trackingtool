@@ -33,16 +33,9 @@ public class TrackingDetailsController {
 		TrackingDetailsResponse response;
 		try {
 			response= cservice.getTrackingDetails(id);
-			if(response != null) {
 			commonMessage.setCode("001");
 			commonMessage.setMessage("Successfully Data Fetched");
 			commonMessage.setTracingrresponse(response);
-			}
-			else
-			{
-				commonMessage.setCode("003");
-				commonMessage.setMessage("No Data Available");
-			}
 		}
 		catch(Exception e)
 		{

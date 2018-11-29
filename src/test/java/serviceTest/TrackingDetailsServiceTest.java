@@ -49,7 +49,8 @@ public class TrackingDetailsServiceTest {
 	   
 	   @Test
 		public void testgetTrackingDetails_Pass_2() throws Exception {
-			when(trackingDaoMock.getTrackingDetails(anyInt())).thenReturn(null);
+		   entity.setTid(null);
+			when(trackingDaoMock.getTrackingDetails(anyInt())).thenReturn(entity);
 			assertNotNull(trackServiceMock.getTrackingDetails(anyInt()));
 		}
 	
