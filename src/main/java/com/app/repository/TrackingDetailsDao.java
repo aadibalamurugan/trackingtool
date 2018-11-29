@@ -4,6 +4,6 @@ import com.app.component.TrackingDetailsEntity;
 
 public interface TrackingDetailsDao {
 
-		public TrackingDetailsEntity getTrackingDetails(Integer id);	
+		public TrackingDetailsEntity getTrackingDetails(Integer id) throws Exception;	
 		
 }

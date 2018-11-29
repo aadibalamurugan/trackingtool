@@ -3,16 +3,16 @@ package com.app.response;
 public class TrackingDetailsResponse
 
 {
-	private int tid;
+	private Integer tid;
 	private String tname;
-	private long tnumber;
+	private Long tnumber;
 	
 	
 	
-	public int getTid() {
+	public Integer getTid() {
 		return tid;
 	}
-	public void setTid(int tid) {
+	public void setTid(Integer tid) {
 		this.tid = tid;
 	}
 	public String getTname() {
@@ -21,10 +21,10 @@ public class TrackingDetailsResponse
 	public void setTname(String tname) {
 		this.tname = tname;
 	}
-	public long getTnumber() {
+	public Long getTnumber() {
 		return tnumber;
 	}
-	public void setTnumber(long tnumber) {
+	public void setTnumber(Long tnumber) {
 		this.tnumber = tnumber;
 	}
 	

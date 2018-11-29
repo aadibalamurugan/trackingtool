@@ -4,5 +4,5 @@ import com.app.response.TrackingDetailsResponse;
 
 public interface TrackingDetailsServ {
 
-	public TrackingDetailsResponse getTrackingDetails(Integer id); 
+	public TrackingDetailsResponse getTrackingDetails(Integer id) throws Exception; 
 }

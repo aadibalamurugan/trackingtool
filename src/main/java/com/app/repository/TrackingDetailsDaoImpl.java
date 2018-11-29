@@ -22,7 +22,7 @@ public class TrackingDetailsDaoImpl implements TrackingDetailsDao {
 	}
 
 	// Get country by id from the database
-	public TrackingDetailsEntity getTrackingDetails(Integer id) {		
+	public TrackingDetailsEntity getTrackingDetails(Integer id) throws Exception {		
 		TrackingDetailsEntity trackDetails = (TrackingDetailsEntity) getTemplate().get(TrackingDetailsEntity.class, new Integer(id));
 		System.out.println(trackDetails.toString());
 		return trackDetails;

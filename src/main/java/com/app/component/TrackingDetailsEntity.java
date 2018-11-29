@@ -14,21 +14,21 @@ public class TrackingDetailsEntity {
 
 	@Id	
 	@Column(name="Tracking_Id")
-	private int tid;
+	private Integer tid;
 
 	@Column(name="Tracking_Name")
 	private String tname;
 
 	@Column(name="Tracking_Number")
-	private long tnumber;
+	private Long tnumber;
 
 	public TrackingDetailsEntity() { }
 
-	public int getTid() {
+	public Integer getTid() {
 		return tid;
 	}
 
-	public void setTid(int tid) {
+	public void setTid(Integer tid) {
 		this.tid = tid;
 	}
 
@@ -40,11 +40,11 @@ public class TrackingDetailsEntity {
 		this.tname = tname;
 	}
 
-	public long getTnumber() {
+	public Long getTnumber() {
 		return tnumber;
 	}
 
-	public void setTnumber(long tnumber) {
+	public void setTnumber(Long tnumber) {
 		this.tnumber = tnumber;
 	}
 
