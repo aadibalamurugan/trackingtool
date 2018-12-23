@@ -13,7 +13,6 @@ import com.app.response.CommonMessage;
 import com.app.response.TrackingDetailsResponse;
 import com.app.service.TrackingDetailsServ;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.*;
